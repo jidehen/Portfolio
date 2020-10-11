@@ -1,0 +1,22 @@
+@prefix : <#> .
+@prefix web-site: <https://jordanidehen.com#> .
+## If you don't have folders i.e., you are using local links via fragment identifiers
+@prefix web-site-project: <https://jordanidehen.com/projects#> .
+
+## If you have folders
+@prefix web-site-project: <https://jordanidehen.com/projects/> .
+
+@prefix rdf: <http://data.openlinksw.com/oplweb/glossary-term/RDF#> .
+@prefix sparql: <http://data.openlinksw.com/oplweb/glossary-term/SPARQL#> .
+@prefix css: <https://www.w3schools.com/whatis/whatis_css.asp#> .
+
+web-site:
+a schema:WebSite ;
+schema:name "Jordan's Web Site"@en ;
+schema:mainEntity web-site:homePage .
+
+web-site:homePage
+a schema:WebPage ;
+schema:name "My Home Page" ;
+schema:about web-site:dataEntryForm, web-site:bearDens, web-site:quirk, web-site:pandemic ;
+schema:relatedLink rdf:this, sparql:this .

@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {width:100%; overflow-x:hidden; line-height: 1; padding: 3vw; font-family: 'Open Sans', sans-serif; font-size: 12px;}
+
+.topbar {
+	grid-area: menu;
+}
+
+.navbar{ padding: 0 !important;}
+a:hover {color:black !important;}
+
+.nav-link {color: rgba(0,0,0,.55) !important;}
+
+.navbar-nav > li {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: transparent;
+  color: black;
+  padding: 12px 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.header {
+  margin: 4vw 0 4vw 0 !important;
+  text-align: center;
+}
+
+h2 { padding-top: 18px; font-weight: 300 !important; font-size: 1.5em !important; }
