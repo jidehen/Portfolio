@@ -71,6 +71,10 @@ a:hover {color:black !important;}
 	margin-right: 1rem;
 }
 
+.img0 img {
+  padding: 50px;
+}
+
 .project-img:hover img{
 	transform: scale(1.1);
 }
